@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Station</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Station</h1>
+        <div>
+            <label for="city-select">Select City:</label>
+            <select id="city-select" onchange="fetchWeather()">
+                <option value="San Jose">San Jose</option>
+                <option value="San Francisco">San Francisco</option>
+                <option value="Santa Clara">Santa Clara</option>
+                <option value="Fremont">Fremont</option>
+            </select>
+        </div>
+        <div>
+            <form id="add-city-form">
+                <label for="new-city">Add New City:</label>
+                <input type="text" id="new-city" placeholder="Enter city name">
+                <button type="submit">Add/Refresh</button>
+            </form>
+        </div>
+        <div class="weather-info">
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

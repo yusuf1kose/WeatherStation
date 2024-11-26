@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
 <body>
     <div class="container">
         <h1>Weather Station</h1>
-        <div>
+        <div class="city-selector">
             <label for="city-select">Select City:</label>
             <select id="city-select" onchange="fetchWeather()">
                 <option value="San Jose">San Jose</option>
@@ -18,7 +19,7 @@
                 <option value="Fremont">Fremont</option>
             </select>
         </div>
-        <div>
+        <div class="add-city">
             <form id="add-city-form">
                 <label for="new-city">Add New City:</label>
                 <input type="text" id="new-city" placeholder="Enter city name">
